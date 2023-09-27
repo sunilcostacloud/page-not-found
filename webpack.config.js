@@ -4,10 +4,10 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath:
-      argv.mode === "development"
-        ? "http://localhost:8084/"
-        : "http://pagenotfound-microfrontend.apps.ocp4.pacosta.com/",
+    publicPath: "http://pagenotfound-microfrontend.apps.ocp4.pacosta.com/"
+    // argv.mode === "development"
+    //   ? "http://localhost:8084/"
+    //   : "http://pagenotfound-microfrontend.apps.ocp4.pacosta.com/",
   },
 
   resolve: {
